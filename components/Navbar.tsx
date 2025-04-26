@@ -33,6 +33,42 @@ const Navbar = () => {
               <span className="sr-only">Toggle theme</span>
             </Button>
           </DropdownMenuTrigger>
+          <DropdownMenuContent align="end">
+            <DropdownMenuItem onClick={() => setTheme("light")}>
+              Light
+            </DropdownMenuItem>
+            <DropdownMenuItem onClick={() => setTheme("dark")}>
+              Dark
+            </DropdownMenuItem>
+            <DropdownMenuItem onClick={() => setTheme("system")}>
+              System
+            </DropdownMenuItem>
+          </DropdownMenuContent>
+        </DropdownMenu>
+
+        <DropdownMenu>
+          <DropdownMenuTrigger>
+            <Avatar>
+              <AvatarImage src="/logo.jpg" />
+              <AvatarFallback>JP</AvatarFallback>
+            </Avatar>
+          </DropdownMenuTrigger>
+          <DropdownMenuContent sideOffset={10}>
+            <DropdownMenuLabel>My Account</DropdownMenuLabel>
+            <DropdownMenuSeparator />
+            <DropdownMenuItem>
+              <User className="h-[1.2rem] w-[1.2rem] mr-2" />
+              Profile
+            </DropdownMenuItem>
+            <DropdownMenuItem>
+              <Settings className="h-[1.2rem] w-[1.2rem] mr-2" />
+              Settings
+            </DropdownMenuItem>
+            <DropdownMenuItem>
+              <LogOut className="h-[1.2rem] w-[1.2rem] mr-2" />
+              Logout
+            </DropdownMenuItem>
+          </DropdownMenuContent>
         </DropdownMenu>
       </div>
     </nav>
