@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Card, CardContent, CardFooter, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardFooter, CardTitle } from "./ui/card";
 import { Badge } from "./ui/badge";
 const popularContent = [
   {
@@ -57,7 +57,7 @@ const latestTransactions = [
     id: 2,
     title: "Payment for Services",
     badge: "Jane Smith",
-    images:
+    image:
       "https://images.pexels.com/photos/4969918/pexels-photo-4969918.jpeg?auto=compress&cs=tinysrgb&w=800",
     count: 2100,
   },
